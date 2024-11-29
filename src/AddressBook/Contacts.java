@@ -88,7 +88,7 @@ public class Contacts {
     public String toString() {
         return "Contact Details : \n"+
                 "Name : "+firstName+" "+secondName+"\n"+
-                "Address : "+address+" "+city+" "+state+" "+zip+"\n"+
+                "Address : "+address+" , "+city+" , "+state+" , "+zip+"\n"+
                 "Phone number : "+phoneNumber+"\n"+
                 "Email : "+email;
     }

@@ -43,6 +43,20 @@ public class AddressBook {
         String update = sc.nextLine();
         return update.isEmpty() ? value : update;
     }
+    public void deleteContacts(String name){
+        boolean found = false;
+        for(int i=0;i<contacts.size();i++){
+            if(contacts.get(i).getFirstName().equalsIgnoreCase(name)){
+                contacts.remove(i);
+                found = true;
+                System.out.println("Contact deleted successfully..!");
+                break;
+            }
+        }
+        if (!found){
+            System.out.println("Contact not found..!");
+        }
+    }
     public void displayContacts(){
         if(contacts.isEmpty()){
             System.out.println("No contacts found..!");
